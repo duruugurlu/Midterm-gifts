@@ -96,7 +96,9 @@ app.get('/', (req, res) => {
                 res.write("document.getElementsByName('price')[i].innerHTML = '$' + menuItems[i].cost.toFixed(2) + '&nbsp;&nbsp;&nbsp;&nbsp;' + select; }}");
 				res.write("window.onload = abc;</script>");
 
-    			res.write("<input type = 'submit' value = 'Add to Cart' class = 'button'>");
+    			res.write("<div style = 'text-align:center'>")
+    			res.write("<input type = 'submit' value = 'Add to Cart' class = 'button' style = 'text-align:center'>");
+			res.write("</div>")
 			res.write("<input type = 'hidden' name = 'item' value = '12'></form>");
     			res.write("<footer>&copy; 2021 Rêve au Chocolat – 23 Fausse Street, Cambridge, MA – (617) 555 0113</footer> </body> </html>");
 
